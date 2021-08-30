@@ -13,36 +13,79 @@
   <title>JY구조기술사사무소</title>
   <meta charset="utf-8">
   <style>
+  #active {
+border: 5px solid midnightblue;
+padding: 5px;
+margin: 5px;
+width: 560px;
+height: 350px;
+margin: 0 auto;
+  }
+  .saw{
+    color:midnightblue;
+  }
    a {
      color:midnightblue;
+     text-decoration: none;
    }
+   h1 {
+     font-size:45px;
+     text-align: center;
+     border-bottom:1px solid gray;
+     margin:0;
+     padding:20px;
+   }
+   h2 {
+     font-size:30px;
+     text-align: center;
+   }
+   ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+   #grid{
+     display: grid;
+     grid-template-columns: 150px 1fr;
+   }
+   #grid ol{
+      padding-left:33px;
+    }
+   #grid #article{
+      padding-left:25px;
+    }
  </style>
 </head>
 <body>
-  <h1><a href="index.html">About us</a></h1>
+  <h1><a href="index.html">JY Architectural Structure</a></h1>
+  <div id="grid">
+    <div>
   <ol>
     <li><a href="About Company.html">About Company</a></li>
     <li><a href="CEO.html">CEO</a></li>
     <li><a href="Executives.html">Executives</a></li>
   </ol>
-  <h2>JY architectural structure</h2>
-  <p>
+    </div>
+    <div id=article>
+  <h2 class="saw">Welcome to JYAS</h2>
+     <!--
+     <p id="active">
     <iframe width="560" height="350" src="https://www.youtube.com/embed/29-xtjX8rAk?autoplay=1&mute=1"
     title="YouTube video player"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
-  </p>
-  <p>
+     </p>
+     -->
+     <p>
     JY architectural structure는
 세계 초일류로 향하는 종합 건축구조 엔지니어링 그룹입니다.
-  </p>
-  <p>
 통합구조설계시스템으로 안전성·시공성·경제성을 만족하는 설계를 합니다.
-  </p>
-  <p>
 국내 구조엔지니어링을 선도하며, 선진 기술력을 보유한 세계적 업체로 거듭나고 있습니다.
-  </p>
+     </p>
+    </div>
+   </div>
   <p>
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
@@ -80,7 +123,6 @@
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
  </p>
-
 
 </body>
 </html>
